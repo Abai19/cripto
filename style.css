@@ -1,0 +1,127 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: black;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.btn {
+    padding: 12px 22px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: Druk;
+    box-shadow: -2px -5px 30px 5px #FD8320;
+    background: linear-gradient(196.11deg, #F8CA79 11.21%, #F5852C 84.76%);
+}
+.btn2 {
+    padding: 22px 32px;
+    font-family: Druk;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: -2px -5px 30px 5px #FD8320;
+    background: linear-gradient(196.11deg, #F8CA79 11.21%, #F5852C 84.76%);
+}
+
+.hero {
+    background-image: url('back3.png'); /* Путь к вашему изображению */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 48px;
+    color: #EBDBB7;
+    text-align: center;
+    margin-bottom: 0px;
+    font-size: 65px;
+    font-family: Druk;
+    font-weight: 700;
+}
+h2 {
+    font-family: Denistina;
+    color: #F8CA79;
+    font-size: 80px;
+    text-align: center;
+    font-weight: 400;
+    margin: 0;
+}
+.left-image {
+    position: absolute;
+    top: 50px; /* Положение от верхнего края */
+    left: 20px; /* Положение от левого края */
+    z-index: 1; /* Устанавливаем z-index, чтобы изображение находилось выше текста */
+}
+
+.right-image {
+    position: absolute;
+    top: 30px; /* Положение от верхнего края */
+    right: 20px; /* Положение от правого края */
+    filter: blur(2px); /* Применяем эффект размытия к изображению */
+}
+.btn-hero {
+    margin-top: 20px;
+}
+@font-face {
+    font-family: Denistina;
+    src: url(denistina_en.ttf);
+}
+@font-face {
+    font-family: Druk;
+    src: url(DrukCyr-Bold.ttf);
+}
+@media only screen and (max-width: 768px) {
+    h1 {
+        margin: 0;
+        font-size: 46px; /* Устанавливаем меньший размер шрифта для h1 на мобильных устройствах */
+    }
+    .hero {
+        background-position: unset;
+    }
+    h2 {
+        font-size: 48px; /* Устанавливаем меньший размер шрифта для h2 на мобильных устройствах */
+    }
+
+    .btn,
+    .btn2 {
+        padding: 12px 22px; /* Уменьшаем отступы кнопок на мобильных устройствах */
+        font-size: 16px; /* Устанавливаем меньший размер шрифта для кнопок на мобильных устройствах */
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .right-image img {
+        max-width: 150px;
+    }
+    .left-image img {
+        max-width: 150px;
+    }
+}
